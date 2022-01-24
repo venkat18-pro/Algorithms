@@ -1,5 +1,7 @@
 package com.algorithms.java;
 
+import java.util.Scanner;
+
 public class BinarySearch {
 
 	public int  binarySearch(int []arr, int start, int length, int x) {
@@ -22,9 +24,10 @@ public class BinarySearch {
 	public static void main(String[] args) {
 		
 		BinarySearch bin = new BinarySearch();
+		Scanner sc = new Scanner(System.in);
 		int [] arr = {1, 3, 4, 10, 40};
 		int len = arr.length;
-		int x = 40;
+		int x = sc.nextInt();
 		
 		int result = bin.binarySearch(arr, 0, len - 1, x);
 		
@@ -32,6 +35,7 @@ public class BinarySearch {
 			System.out.println("Element is not presend");
 		else
 			System.out.println("Element fount at Indix: "+result);
+		sc.close();
 	}
-
+	
 }

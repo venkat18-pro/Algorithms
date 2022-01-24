@@ -1,5 +1,7 @@
 package com.algorithms.java;
 
+import java.util.Scanner;
+
 public class LinearSearch {
 
 	public static int linearSearch(int[] arr, int start,int x) {
@@ -13,15 +15,16 @@ public class LinearSearch {
 	}
 	
 	public static void main(String[] args) {
-		
+		Scanner sc = new Scanner(System.in);
 		int[] arrs = {1,2,4,13,16};
-		int x = 20;
+		int x = sc.nextInt();
 		int result = linearSearch(arrs, 0, x);
 		
 		if(result == -1) 
 			System.out.println("Element not present.");
 		else
 			System.out.println("Element find the Index: "+result);
+		sc.close();
 	}
 
 }
