@@ -4,8 +4,8 @@ public class BinarySearch {
 
 	public int  binarySearch(int []arr, int start, int length, int x) {
 		
-		if(length >= 3) {
-			int mid = start +(length - 1) / 2;
+		if(length >= start) {
+			int mid = (start + length) / 2;
 			
 			if(arr[mid] == x)
 				return mid;
@@ -24,7 +24,7 @@ public class BinarySearch {
 		BinarySearch bin = new BinarySearch();
 		int [] arr = {1, 3, 4, 10, 40};
 		int len = arr.length;
-		int x = 10;
+		int x = 40;
 		
 		int result = bin.binarySearch(arr, 0, len - 1, x);
 		
