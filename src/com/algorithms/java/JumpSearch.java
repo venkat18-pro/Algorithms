@@ -1,5 +1,7 @@
 package com.algorithms.java;
 
+import java.util.Scanner;
+
 public class JumpSearch {
 
 	public static int jumpSearch(int[] arr, int x) {
@@ -22,8 +24,9 @@ public class JumpSearch {
 	
 	public static void main(String[] args) {
 		
+		Scanner sc = new Scanner(System.in);
 		int []arr = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17};
-		int x = 0;
+		int x = sc.nextInt();
 		int result = jumpSearch(arr, x);
 		
 		if(result == -1)
