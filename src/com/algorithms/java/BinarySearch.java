@@ -6,7 +6,7 @@ public class BinarySearch {
 
 	public int  binarySearch(int []arr, int start, int length, int x) {
 		
-		if(length >= start) {
+		if(arr[length] >= x && arr[start] <= x) {
 			int mid = (start + length) / 2;
 			
 			if(arr[mid] == x)
@@ -31,7 +31,7 @@ public class BinarySearch {
 		
 		int result = bin.binarySearch(arr, 0, len - 1, x);
 		
-		if(result == -1)
+		if(result == -1) 
 			System.out.println("Element is not presend");
 		else
 			System.out.println("Element fount at Indix: "+result);
